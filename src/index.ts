@@ -114,7 +114,7 @@ export default {
 		return new Response("ez-alarm is running");
 	},
 
-	async scheduled(_controller, env): Promise<void> {
+	async scheduled(controller, env, ctx): Promise<void> {
 		await processScheduledRoom(env);
 	},
 } satisfies ExportedHandler<Env>;

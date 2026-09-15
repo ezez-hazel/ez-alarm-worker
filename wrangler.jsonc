@@ -14,12 +14,12 @@
 		"crons": ["*/5 * * * *"]
 	},
 	"vars": {
-		"ROOM_ID": ""
+		"ROOM_ID": "1713546334"
 	},
 	"d1_databases": [
 		{
 			"binding": "DB",
-			"database_name": "ez-alarm"
+			"database_name": "ez-database-bark"
 		}
 	],
 	"kv_namespaces": [
@@ -30,7 +30,7 @@
 	"services": [
 		{
 			"binding": "NOTIFICATION_WORKER",
-			"service": "bark-worker"
+			"service": "ez-bark-worker"
 		}
 	],
 	"assets": {
