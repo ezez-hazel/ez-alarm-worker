@@ -11,7 +11,7 @@
 		"global_fetch_strictly_public"
 	],
 	"triggers": {
-		"crons": ["*/5 * * * *"]
+		"crons": ["* * * * *"]
 	},
 	"vars": {
 		"ROOM_ID": "1713546334"
