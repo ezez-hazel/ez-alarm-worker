@@ -10,6 +10,29 @@
 	"compatibility_flags": [
 		"global_fetch_strictly_public"
 	],
+	"triggers": {
+		"crons": ["*/5 * * * *"]
+	},
+	"vars": {
+		"ROOM_ID": ""
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "ez-alarm"
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "KV"
+		}
+	],
+	"services": [
+		{
+			"binding": "NOTIFICATION_WORKER",
+			"service": "bark-worker"
+		}
+	],
 	"assets": {
 		// The path to the directory containing the `index.html` file to be served at `/`
 		"directory": "./public"
