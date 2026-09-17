@@ -1,5 +1,7 @@
 # ez-alarm
 
+> 由于 bilibili 风控限制 Cloudflare 边缘网络访问 API ，本项目已废弃。
+
 [![部署到 Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ezez-hazel/ez-alarm)
 
 这是一个 Cloudflare Worker，用于定时检查一个 Bilibili 直播间，并在主播开播时通过绑定的 `bark-worker` Worker 发送通知。
